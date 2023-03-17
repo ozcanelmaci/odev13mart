@@ -43,7 +43,7 @@ public class CustomerManager implements CustomerService {
     @Override
     public void delete(Customer customer) {
         if(customers.contains(customer)){
-            System.out.println(customer.getFirstName() + " " + customer.getLastName() + "sistemden silindi. ");
+            System.out.println(customer.getFirstName() + " " + customer.getLastName() + " sistemden silindi. ");
             customers.remove(customer);
         }
         else{
