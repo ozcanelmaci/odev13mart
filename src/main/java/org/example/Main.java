@@ -35,6 +35,11 @@ public class Main {
 
         customerManager.add(customer2);
 
+        Customer customer3 =  new Customer(4, "zubeyde@gmail.com", "123456", "55555555555", "Zübeyde", "Yalçın",
+                new Date(1999, 4, 4), new ArrayList<>());//nationalityId repoda bulunan customerdan farklı
+
+        customerManager.add(customer3);
+
         customerManager.buyGame(customer1, game1);
         customerManager.buyGame(customer1, game2);
 
